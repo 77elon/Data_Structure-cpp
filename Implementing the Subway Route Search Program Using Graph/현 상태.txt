@@ -1,0 +1,33 @@
+10 - 2, 32 - 2, 53 - 3, 54 - 3, 59, 107, 108, 112
+10번, 53번은 시청, lane 1 > 2, 2 > 1, 2 > 2(이미 구현) 
+54번 성수(성수지선)
+59번 신도림(신정지선)
+64번 지축 3호선
+95번 당고개 4호선 시작
+107번 동대문 (1호선 + 4호선)
+108번 동대문 문화공원 (2호선 + 4호선)
+112번 서울역 (1+4)
+32번 교대 (2+3)
+		Trans_connectivity(time, 0, 112, 2);
+
+		Trans_connectivity(time, 1, 10, 2);
+		Trans_connectivity(time, 10, 53, 3);
+
+		Trans_connectivity(time, 12, 75, 1);
+
+		Trans_connectivity(time, 5, 107, 2);
+
+		Trans_connectivity(time, 14, 108, 2);
+
+		Trans_connectivity(time, 20, 54, 3);
+
+		Trans_connectivity(time, 32, 85, 2);
+
+		Trans_connectivity(time, 35, 119, 2);
+
+		Trans_connectivity(time, 43, 59, 2);
+
+		Trans_connectivity(time, 76, 109, 1);
+특정 방향으로 해결하려고 하는데
+dist 수동 설정한거 때문에 제일 빠른 문제 해결을 해버림!
+그래서 값 생략이 계속 발생함!
